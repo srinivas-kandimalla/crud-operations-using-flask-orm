@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Record</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Edit Record</h1>
+
+        <form action="/update/{{ person.id }}" method="POST" class="form">
+
+            <input
+                type="text"
+                name="name"
+                value="{{ person.name }}"
+                required
+            >
+
+            <input
+                type="number"
+                name="age"
+                value="{{ person.age }}"
+                required
+            >
+
+            <button type="submit">
+                Update
+            </button>
+
+        </form>
+
+        <br>
+
+        <a href="/" class="edit-btn">
+            Back to Dashboard
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
