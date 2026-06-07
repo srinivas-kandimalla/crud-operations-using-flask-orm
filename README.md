@@ -4,7 +4,7 @@ A simple CRUD (Create, Read, Update, Delete) web application built using Flask a
 
 ## Project Output
 
-![Application Preview](outputs/app_preview.png)
+<img src="./outputs/app_preview.png" width="1000">
 
 ## Features
 
